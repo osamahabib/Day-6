@@ -1,0 +1,555 @@
+<!-- Explain the below how it works -->
+<!--fix.html-->
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I'm JavaScript!"); // wrong quotes used for the string begin and end
+ </script>
+ Whats the error in this ?
+</body>
+</html> <!--missing html end tag-->
+
+
+<!-- Fix the below to alert Guvi geek -->
+<!--fix.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”scripts.js”></script> <!--wrong filename was used-->
+</body>
+</html>
+
+<!--scripts.js-->
+alert(“I’m invoked!”);
+
+
+
+<!-- Fix the below to alert hello Guvi geek -->
+<!--explain.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script> <!--script file path is given-->
+</body>
+</html>
+
+<!--script.js-->
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon - will work because HTML is forgiving language and ignores small errors
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working - because JS does not treat different lines as different part of code. It checks for syntax.
+
+
+
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script><!--replaced the quotes with proper quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+lname;
+alert( admin ); // "Guvi geek"
+
+
+
+<!-- Fix the below to alert sum of two numbers -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--replaced with proper double quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+lname;
+alert( `hello ${name}` );//replaced quotes with backticks for proper alert
+
+
+
+<!-- Fix the below to alert sum of two numbers -->
+<!--fix.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
+
+<!--script.js-->
+let a = Number(prompt("First number?")); //to fix this we added Number before prompt to take the input in number format
+let b = Number(prompt("Second number?"));//to fix this we added Number before prompt to take the input in number format
+alert(a+b);
+
+
+
+
+<!-- If you run the below scritpt you will get “Code is Blasted” -->
+<!-- Explain Why the Code is blasted and how to diffuse it and get “Diffused”. -->
+<!--fix.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+//var a = "2" > "12"; we are reading as string therefore it returns to true
+var a = 2 > 12; //changes to print "Diffused"
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+
+
+<!-- //How to get the success in console. -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let a = prompt("Enter a number?"); //Do not give any input and we will get "Success" in console
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+
+
+<!-- //How to get the correct score in console. -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let value = prompt('How many runs you scored in this ball');
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log(`You made ${value} runs`); //we use the string interpolation and print value of input data
+}
+
+
+
+<!-- //Fix the code to welcome the Employee -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let login = 'Employee';
+let message = (login == 'Employee') ? :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+
+
+<!-- //Fix the code to welcome the boss -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+<!-- // You cant change the value of the msg -->
+let message;
+if (null || 2 || undefined )
+{
+ message = "welcome boss";//removed the redeclaration
+}
+else
+{
+ message = "Go away";//removed the redeclaration
+}
+console.log(message);
+
+
+
+<!-- //Fix the code to welcome the boss -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let message;
+let lock = 0;//redeclated value to 0
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+  
+
+<!-- //Fix the code to welcome the boss -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let message;
+let lock = 0;//redeclated value to 0
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+  
+
+//Change the code to print
+//3
+//2
+//1
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+//You can change only 2 characters
+let i = 3;
+while (i) {
+  console.log( i-- ); //did postdecrement
+}
+
+
+
+<!-- //Q. Change the code to print 1 to 10 in 4 lines -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+for (let index = 0; index <= 10; index++) { //refectored code to print upto 10 in 4 lines
+    console.log(index);    
+}
+
+
+<!-- //Q. Change the code to print even numbers -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 2) { //modified to num+=2
+    console.log(num)
+  }
+
+
+<!-- //Q. Change the code to print all the gifts -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`); //used string interpolation with correct syntax
+}
+
+
+
+<!-- //Q. Fix the code to disarm the bomb. -->
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script> <!--corrected the quotes-->
+</body>
+</html>
+
+<!--script.js-->
+let countdown = 100;
+while (countdown > 0) {
+  countdown--;
+  break;//added break to disarm
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+}
+
+
+
+
+<!-- //Q. Whats the msg printed and why? -->
+<!--script.js-->
+
+var lemein = '0';
+var lemeout = 0;
+var msg = '';
+if (lemein) {
+ msg += 'hi';
+ }
+if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);
+
+output: hi
+    <!-- 
+    //reason: limein is taken as string input therefore the block is executed whereas in limeout its number therefore the block condition is falsy so 
+    //the block is skipped.  -->
+
+
+
+<!-- GUVI: Zen Class — Part 2 : Find the culprits and nail them — debugging javascript loops -->
+
+<!-- Write a code to print the numbers in the array -->
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = '';
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+<!-- Output: 1234567891011 -->
+
+
+
+<!-- Write a code to print the numbers in the array -->
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] + ',' 
+}
+console.log(new_string);
+<!--Output: 1,2,3,4,5,6,7,8,9,10,11, -->
+
+
+
+<!-- Write a code to print from last to first with spaces (Make sure there is no space after the last element 1) -->
+var new_string = '';
+for (var i = 11; i > 0; i--) {
+ new_string += i + ' '
+}
+let result = new_string.trimEnd();
+console.log(result);
+// Output: 11 10 9 8 7 6 5 4 3 2 1
+
+
+
+<!-- Write a code to replace the array value — If the number is even, replace it with ‘even’. -->
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = 'even'
+ }
+}
+console.log(numsArr);
+// output: Array(11) [ 1, "even", 3, "even", 5, "even", 7, "even", 9, "even", … ]
+
+
+
+
+<!-- Write a code to replace the array value — If the index is even, replace it with ‘even’. -->
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 1 )
+ {
+ numsArr[i] = "even"
+ }
+}
+console.log(numsArr);
+// Output: Array(11) [ "even", 2, "even", 4, "even", 6, "even", 8, "even", 10, … ]
+
+
+
+<!-- Write a code to add all the numbers in the array -->
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum =0;
+for (var i = 0; i <=10; i++) {
+ sum += numsArr[i]
+}
+console.log(sum);
+// Output: 66
+
+
+
+<!-- Write a code to add the even numbers only -->
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i < 10; i++) {
+ if(numsArr[i]%2==0)
+ sum += numsArr[i];
+}
+console.log(sum);
+//Output: 30
+
+
+
+<!-- Write a code to add the even numbers and subract the odd numbers -->
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2==0)
+ {
+ sum += numsArr[i];
+ }
+ else
+ {
+ sum -= numsArr[i];
+ }
+}
+console.log(sum);   
+// Output: 94
+
+
+
+<!-- Write a code to print inner arrays -->
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++){
+ console.log( numsArr[i])
+}
+//Output:
+Array(5) [ 1, 2, 3, 4, 5 ]                  script.js:3:10
+Array(6) [ 6, 7, 8, 9, 10, 11 ]
+
+
+<!--Write a code to print elements in the inner arrays-->
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all="";
+
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+     str_all +=inner_array[j]
+}
+console.log(str_all);
+//Output: 1234567891011
+
+
+
+<!-- Write a code to replace the array value — If the index is even, replace it with ‘even’ -->
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++)
+      if(inner_array[j] %2 == 0 )
+      {
+         inner_array[j] = "even" //put string in quotes
+       }
+}
+console.log(numsArr); //print the final array
+//Output: 
+0: Array(5) [ 1, "even", 3, … ]
+1: Array(6) [ "even", 7, "even", … ]
+
+
+<!-- Write a code to print elements in the inner arrays in reverse -->
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all="";
+
+for (var i = numsArr.length-1; i >= 0; i--) {
+ var inner_array = numsArr[i];
+ console.log(inner_array)
+ for(var j = inner_array.length-1 ; j >= 0;j--)
+     str_all +=inner_array[j]+' ';
+    }
+console.log(str_all);
+
+
+
+<!-- Write a code to add elements in the inner arrays based on odd or even values -->
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var sum_odd=0;
+var sum_even=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++){
+ if(inner_array[j]%2==0)
+ {
+ sum_even += inner_array[j]
+ }
+ else
+ {
+ sum_odd += inner_array[j]
+ }
+}
+}
+console.log(sum_odd);
+console.log(sum_even);
+//Output: 
+//36 script.js:18:9
+//30
